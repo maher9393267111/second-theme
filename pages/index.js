@@ -32,7 +32,7 @@ export default function Home() {
 <div class="col-sm-12 col-md-10 col-lg-8 col-xl-6">
 <div class="section-title1">
 <h2>Our Recent News</h2>
-<p class="mb-0">Explore on the world's best & largest Bidding marketplace with our beautiful Bidding
+<p class="mb-0">Explore on the world&apos;s best & largest Bidding marketplace with our beautiful Bidding
 products. We want to be a part of your smile, success and future growth.</p>
 </div>
 </div>
@@ -67,7 +67,7 @@ Digital Reviews</a></h5>
 <img alt="image" src="assets/images/blog/blogstyle12.png"/>
 </div>
 <div class="blog-content">
-<h5><a href="blog-details.html">Take our friend Johnny No-Job, for example. He’s a
+<h5><a href="blog-details.html">Take our friend Johnny No-Job, for example. He&apos;s a
 specialist in influencer.</a></h5>
 <div class="blog-meta">
 <div class="author">
