@@ -1,8 +1,17 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
+
+import {useState, useEffect} from 'react'
 
 export default function Home() {
+
+  const[newtrans,setNewTrans] = useState(true)
+    const handleclick =()=>{
+          setNewTrans(!newtrans)}
+
+
   return (
     <div className={styles.container}>
       <Head>
@@ -11,59 +20,97 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      
+<div className=' m-24 '>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+<div class="recent-news-section pt-120 pb-120">
+<img alt="image" src="assets/images/bg/section-bg.png" class="img-fluid section-bg"/>
+<img alt="image" src="assets/images/icons/dot-circle.svg" class="dot-circle"/>
+<div class="container">
+<div class="row d-flex justify-content-center">
+<div class="col-sm-12 col-md-10 col-lg-8 col-xl-6">
+<div class="section-title1">
+<h2>Our Recent News</h2>
+<p class="mb-0">Explore on the world's best & largest Bidding marketplace with our beautiful Bidding
+products. We want to be a part of your smile, success and future growth.</p>
+</div>
+</div>
+</div>
+<div class="row d-flex justify-content-center g-4">
+<div class="col-md-6 col-sm-10">
+<div class="single-blog-style1 wow animate fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.2s">
+<div class="blog-img">
+<a href="#" class="blog-date"><i class="bi bi-calendar-check"></i>Jan 30, 2022</a>
+<img alt="image" src="assets/images/blog/blogstyle11.png"/>
+</div>
+<div class="blog-content">
+<h5><a href="blog-details.html">David Droga Still Has Faith in Online Advertising Creative
+Digital Reviews</a></h5>
+<div class="blog-meta">
+<div class="author">
+<img alt="image" src="assets/images/blog/author1.png"/>
+<a href="blog.html" class="author-name">Johan Martin</a>
+</div>
+<div class="comment">
+<img alt="image" src="assets/images/icons/comment-icon.svg"/>
+<a href="#" class="comment">05 Comments</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-sm-10">
+<div class="single-blog-style1 wow animate fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.4s">
+<div class="blog-img">
+<a href="#" class="blog-date"><i class="bi bi-calendar-check"></i>May 30, 2022</a>
+<img alt="image" src="assets/images/blog/blogstyle12.png"/>
+</div>
+<div class="blog-content">
+<h5><a href="blog-details.html">Take our friend Johnny No-Job, for example. He’s a
+specialist in influencer.</a></h5>
+<div class="blog-meta">
+<div class="author">
+<img alt="image" src="assets/images/blog/author1.png"/>
+<a href="blog.html" class="author-name">Johan Martin</a>
+</div>
+<div class="comment">
+<img alt="image" src="assets/images/icons/comment-icon.svg"/>
+<a href="#" class="comment">05 Comments</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+
+ 
+
+</div>
+
+
+
+
+{/* - */}
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
   )
 }
